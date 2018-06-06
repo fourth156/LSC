@@ -15,197 +15,199 @@
 
 <body>
 
-    <div class="row mt-5 mx-auto">
-        <div class="col-lg-6">
-
-            <!--Date-->
-            <div class="row">
-                <div class="col-lg-1">
-                    <input class="tgl tgl-ios" id="cb2" type="checkbox" />
-                    <label class="tgl-btn" for="cb2"></label>
+    <form action="">
+            <div class="row mt-5 mx-auto">
+                    <div class="col-lg-6">
+            
+                        <!--Date-->
+                        <div class="row" id="date">
+                            <div class="col-lg-1">
+                                <input class="tgl tgl-ios" id="cb2" type="checkbox"/>
+                                <label class="tgl-btn" for="cb2"></label>
+                            </div>
+                            <div class="col-lg-2">
+                                Date:
+                            </div>
+                            <div class="col-lg-2">
+                                <input type="text" placeholder="From" class="medBox" disabled>
+                            </div>
+                            <div class="col-lg-1"></div>
+                            <div class="col-lg-2">
+                                <input type="text" placeholder="To" class="medBox" disabled>
+                            </div>
+                        </div>
+            
+                        <!--Time-->
+                        <div class="row mt-4" id="time">
+                            <div class="col-lg-1">
+                                <input class="tgl tgl-ios" id="cb3" type="checkbox" />
+                                <label class="tgl-btn" for="cb3"></label>
+                            </div>
+                            <div class="col-lg-2">
+                                Time:
+                            </div>
+                            <div class="col-lg-3">
+                                <input type="checkbox" name="time" value="Morning" disabled>Morning
+                            </div>
+                            <div class="col-lg-5">
+                                <input type="checkbox" name="time" value="Noon" disabled>Noon
+                            </div>
+                            <div class="col-lg-3"></div>
+                            <div class="col-lg-3">
+                                <input type="checkbox" name="time" value="Afternoon" disabled>Afternoon
+                            </div>
+                            <div class="col-lg-3">
+                                <input type="checkbox" name="time" value="Evening" disabled>Evening
+                            </div>
+                        </div>
+            
+                        <!--Locations-->
+                        <div class="row mt-2" id="locations">
+                            <div class="col-lg-1">
+                                <input class="tgl tgl-ios" id="cb4" type="checkbox" />
+                                <label class="tgl-btn" for="cb4"></label>
+                            </div>
+                            <div class="col-lg-2">
+                                Location(s):
+                            </div>
+                            <div class="col-lg-4">
+                                <input type="text" placeholder="Location" class="lgBox" disabled>
+                            </div>
+                            <div class="col-lg-5">Hyperlink</div>
+                            <div class="col-lg-3"></div>
+                            <div class="col-lg-4">
+                                <input type="text" placeholder="Location" class="lgBox" disabled>
+                            </div>
+                            <div class="col-lg-5">Hyperlink</div>
+                            <div class="col-lg-3"></div>
+                            <div class="col-lg-7">
+                                <a href="">Add Location</a>
+                            </div>
+                        </div>
+            
+                        <!--Objects-->
+                        <div class="row mt-2" id="objects">
+                            <div class="col-lg-1">
+                                <input class="tgl tgl-ios" id="cb5" type="checkbox" />
+                                <label class="tgl-btn" for="cb5"></label>
+                            </div>
+                            <div class="col-lg-2">
+                                Object(s):
+                            </div>
+                            <div class="col-lg-4">
+                                <input type="text" placeholder="Object" class="lgBox" disabled>
+                            </div>
+                            <div class="col-lg-5">Hyperlink</div>
+                            <div class="col-lg-3"></div>
+                            <div class="col-lg-4">
+                                <input type="text" placeholder="Object" class="lgBox" disabled>
+                            </div>
+                            <div class="col-lg-5">Hyperlink</div>
+                            <div class="col-lg-3"></div>
+                            <div class="col-lg-7">
+                                <a href="">Add Object</a>
+                            </div>
+                        </div>
+            
+                        <!--Actions-->
+                        <div class="row mt-2" id="actions">
+                            <div class="col-lg-1">
+                                <input class="tgl tgl-ios" id="cb6" type="checkbox" />
+                                <label class="tgl-btn" for="cb6"></label>
+                            </div>
+                            <div class="col-lg-2">
+                                Action(s):
+                            </div>
+                            <div class="col-lg-4">
+                                <input type="text" placeholder="Action" class="lgBox" disabled>
+                            </div>
+                            <div class="col-lg-5">Hyperlink</div>
+                            <div class="col-lg-3"></div>
+                            <div class="col-lg-4">
+                                <input type="text" placeholder="Action" class="lgBox" disabled>
+                            </div>
+                            <div class="col-lg-5">Hyperlink</div>
+                            <div class="col-lg-3"></div>
+                            <div class="col-lg-5">
+                                <a href="">Add Action</a>
+                            </div>
+                        </div>
+            
+                        <!--Biometrics-->
+                        <div class="row" id="biometrics">
+                            <div class="col-lg-1">
+                                <input class="tgl tgl-ios" id="cb7" type="checkbox" />
+                                <label class="tgl-btn" for="cb7"></label>
+                            </div>
+                            <div class="col-lg-2">
+                                Biometrics:
+                            </div>
+                            <div class="col-lg-3">
+                                <span style="font-size: 14px">Heart rate:</span>
+                            </div>
+                            <div class="col-lg-1">
+                                <input type="text" placeholder="From" class="smBox" disabled>
+                            </div>
+                            <div class="col-lg-4">
+                                <input type="text" placeholder="To" class="smBox" disabled>
+                            </div>
+            
+                            <div class="col-lg-3"></div>
+                            <div class="col-lg-3">
+                                <span style="font-size: 14px">Gavanic Skin Respond:</span>
+                            </div>
+                            <div class="col-lg-1">
+                                <input type="text" placeholder="From" class="smBox" disabled>
+                            </div>
+                            <div class="col-lg-4">
+                                <input type="text" placeholder="To" class="smBox" disabled>
+                            </div>
+            
+                            <div class="col-lg-3"></div>
+                            <div class="col-lg-3">
+                                <span style="font-size: 14px">Calorie burn: </span>
+                            </div>
+                            <div class="col-lg-1">
+                                <input type="text" placeholder="From" class="smBox" disabled>
+                            </div>
+                            <div class="col-lg-4">
+                                <input type="text" placeholder="To" class="smBox" disabled>
+                            </div>
+            
+                            <div class="col-lg-3"></div>
+                            <div class="col-lg-3">
+                                <span style="font-size: 14px">Step:</span>
+                            </div>
+                            <div class="col-lg-1">
+                                <input type="text" placeholder="From" class="smBox" disabled>
+                            </div>
+                            <div class="col-lg-4">
+                                <input type="text" placeholder="To" class="smBox" disabled>
+                            </div>
+                        </div>
+            
+                    </div>
+            
+            
+            
+                    <div class="col-lg-6">
+                        Pic
+                    </div>
+            
                 </div>
-                <div class="col-lg-2">
-                    Date:
+            
+                <div class="row">
+                    <div class="col-lg-3 mt-5">
+                        <button type="reset" class="btn btn-primary btn-lg">Clear</button>
+                    </div>
+                    <div class="col-lg-6 mt-5">
+                        <button type="button" class="btn btn-primary btn-lg">Retrieve</button>
+                    </div>
+                    <div class="col-lg-3 mt-5">
+                        <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                    </div>
                 </div>
-                <div class="col-lg-2">
-                    <input type="text" placeholder="From" class="medBox">
-                </div>
-                <div class="col-lg-1"></div>
-                <div class="col-lg-2">
-                    <input type="text" placeholder="To" class="medBox">
-                </div>
-            </div>
-
-            <!--Time-->
-            <div class="row mt-4">
-                <div class="col-lg-1">
-                    <input class="tgl tgl-ios" id="cb3" type="checkbox" />
-                    <label class="tgl-btn" for="cb3"></label>
-                </div>
-                <div class="col-lg-2">
-                    Time:
-                </div>
-                <div class="col-lg-3">
-                    <input type="checkbox" name="time" value="Morning">Morning
-                </div>
-                <div class="col-lg-5">
-                    <input type="checkbox" name="time" value="Noon">Noon
-                </div>
-                <div class="col-lg-3"></div>
-                <div class="col-lg-3">
-                    <input type="checkbox" name="time" value="Afternoon">Afternoon
-                </div>
-                <div class="col-lg-3">
-                    <input type="checkbox" name="time" value="Evening">Evening
-                </div>
-            </div>
-
-            <!--Locations-->
-            <div class="row mt-2">
-                <div class="col-lg-1">
-                    <input class="tgl tgl-ios" id="cb4" type="checkbox" />
-                    <label class="tgl-btn" for="cb4"></label>
-                </div>
-                <div class="col-lg-2">
-                    Location(s):
-                </div>
-                <div class="col-lg-4">
-                    <input type="text" placeholder="Location" class="lgBox">
-                </div>
-                <div class="col-lg-5">Hyperlink</div>
-                <div class="col-lg-3"></div>
-                <div class="col-lg-4">
-                    <input type="text" placeholder="Location" class="lgBox">
-                </div>
-                <div class="col-lg-5">Hyperlink</div>
-                <div class="col-lg-3"></div>
-                <div class="col-lg-7">
-                    <a href="">Add Location</a>
-                </div>
-            </div>
-
-            <!--Objects-->
-            <div class="row mt-2">
-                <div class="col-lg-1">
-                    <input class="tgl tgl-ios" id="cb5" type="checkbox" />
-                    <label class="tgl-btn" for="cb5"></label>
-                </div>
-                <div class="col-lg-2">
-                    Object(s):
-                </div>
-                <div class="col-lg-4">
-                    <input type="text" placeholder="Object" class="lgBox">
-                </div>
-                <div class="col-lg-5">Hyperlink</div>
-                <div class="col-lg-3"></div>
-                <div class="col-lg-4">
-                    <input type="text" placeholder="Object" class="lgBox">
-                </div>
-                <div class="col-lg-5">Hyperlink</div>
-                <div class="col-lg-3"></div>
-                <div class="col-lg-7">
-                    <a href="">Add Object</a>
-                </div>
-            </div>
-
-            <!--Actions-->
-            <div class="row mt-2">
-                <div class="col-lg-1">
-                    <input class="tgl tgl-ios" id="cb6" type="checkbox" />
-                    <label class="tgl-btn" for="cb6"></label>
-                </div>
-                <div class="col-lg-2">
-                    Action(s):
-                </div>
-                <div class="col-lg-4">
-                    <input type="text" placeholder="Action" class="lgBox">
-                </div>
-                <div class="col-lg-5">Hyperlink</div>
-                <div class="col-lg-3"></div>
-                <div class="col-lg-4">
-                    <input type="text" placeholder="Action" class="lgBox">
-                </div>
-                <div class="col-lg-5">Hyperlink</div>
-                <div class="col-lg-3"></div>
-                <div class="col-lg-5">
-                    <a href="">Add Action</a>
-                </div>
-            </div>
-
-            <!--Biometrics-->
-            <div class="row">
-                <div class="col-lg-1">
-                    <input class="tgl tgl-ios" id="cb7" type="checkbox" />
-                    <label class="tgl-btn" for="cb7"></label>
-                </div>
-                <div class="col-lg-2">
-                    Biometrics:
-                </div>
-                <div class="col-lg-3">
-                    <span style="font-size: 14px">Heart rate:</span>
-                </div>
-                <div class="col-lg-1">
-                    <input type="text" placeholder="From" class="smBox">
-                </div>
-                <div class="col-lg-4">
-                    <input type="text" placeholder="To" class="smBox">
-                </div>
-
-                <div class="col-lg-3"></div>
-                <div class="col-lg-3">
-                    <span style="font-size: 14px">Gavanic Skin Respond:</span>
-                </div>
-                <div class="col-lg-1">
-                    <input type="text" placeholder="From" class="smBox">
-                </div>
-                <div class="col-lg-4">
-                    <input type="text" placeholder="To" class="smBox">
-                </div>
-
-                <div class="col-lg-3"></div>
-                <div class="col-lg-3">
-                    <span style="font-size: 14px">Calorie burn: </span>
-                </div>
-                <div class="col-lg-1">
-                    <input type="text" placeholder="From" class="smBox">
-                </div>
-                <div class="col-lg-4">
-                    <input type="text" placeholder="To" class="smBox">
-                </div>
-
-                <div class="col-lg-3"></div>
-                <div class="col-lg-3">
-                    <span style="font-size: 14px">Step:</span>
-                </div>
-                <div class="col-lg-1">
-                    <input type="text" placeholder="From" class="smBox">
-                </div>
-                <div class="col-lg-4">
-                    <input type="text" placeholder="To" class="smBox">
-                </div>
-            </div>
-
-        </div>
-
-
-
-        <div class="col-lg-6">
-            Pic
-        </div>
-
-    </div>
-
-    <div class="row">
-        <div class="col-lg-3 mt-5">
-            <button type="button" class="btn btn-primary btn-lg">Clear</button>
-        </div>
-        <div class="col-lg-6 mt-5">
-            <button type="button" class="btn btn-primary btn-lg">Retrieve</button>
-        </div>
-        <div class="col-lg-3 mt-5">
-            <button type="button" class="btn btn-primary btn-lg">Submit</button>
-        </div>
-    </div>
+    </form>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -215,6 +217,7 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
